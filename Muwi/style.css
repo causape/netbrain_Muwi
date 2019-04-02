@@ -1,160 +1,154 @@
-#image-container1 {
+.image-container1 {
     flex: 1;
 }
 
-#image-container2 {
+.image-container2 {
     flex: 1;
 }
 
-#image-container3{
+.image-container3{
     flex: 1;
 }
 
-#image-container4{
+.image-container4{
     flex: 1;
 }
 
-#image-container5{
+.image-container5{
     flex: 1;
 }
 
-#image-container6{
+.image-container6{
     flex: 1;
 }
 
-#image-container7{
+.image-container7{
     flex: 1;
 }
 
-#image-container8 {
+.image-container8 {
     flex: 1;
 }
 
-#image-container9 {
+.image-container9 {
     flex: 1;
 }
 
-#image-container10 {
+.image-container10 {
     flex: 1;
 }
 
-#image-container11 {
+.image-container11 {
     flex: 1;
 }
 
-#image-container12 {
+.image-container12 {
     flex: 1;
 }
 
-#image-container13 {
+.image-container13 {
     flex: 1;
 }
 
-#image-container14 {
+.image-container14 {
     flex: 1;
 }
 
-#image-container15 {
+.image-container15 {
     flex: 2;
 }
 
-.container {
+.contenedor {
     /* background-image: url("x.jpeg"); /* The image used - important! */
     position: relative;
     /* Needed to position the cutout text in the middle of the image */
-    height: 25vw;
+    height: 18vw;
     /* Some height */
     overflow: hidden;
 }
 
-img:hover {
+.imagen:hover {
     animation: leaves 1s forwards;
     overflow: hidden;
 }
 
-@media only screen and (max-device-width: 800px) { 	
-	body > #wrapper1
-		    {		
+@media only screen and (max-device-width: 800px) {
+	.wrapperResponsive > .wrapper1
+		    {
 			display: flex;
 			flex-direction: column;
-			flex-wrap: wrap;
 			height: 150vw;
 			}
-	body > #wrapper2
-		    {		
+	.wrapperResponsive > .wrapper2
+		    {
 			display: flex;
 			flex-direction: column;
-			flex-wrap: wrap;
-			height: 150vw;			
+			height: 150vw;
 			}
-	body > #wrapper3
-		    {		
+	.wrapperResponsive > .wrapper3
+		    {
 			display: flex;
 			flex-direction: column;
-			flex-wrap: wrap;
-			height: 300vw;			
-			}		
-	body > #wrapper4
-		    {		
+			height: 300vw;
+			}
+	.wrapperResponsive > .wrapper4
+		    {
 			display: flex;
 			flex-direction: column;
-			flex-wrap: wrap;
-			height: 300vw;			
-			}		
-	body > #wrapper5
-		    {		
+			height: 300vw;
+			}
+	.wrapperResponsive > .wrapper5
+		    {
 			display: flex;
 			flex-direction: column;
-			flex-wrap: wrap;
-			height: 270vw;			
-			}			
-			
-			#image-container15 {
+			height: 270vw;
+			}
+
+			.image-container15 {
     flex: 1;
-}
-	
 }
 
-@media only screen and (max-width: 800px) { 	
-	body > #wrapper1
-		    {		
+}
+
+@media only screen and (max-width: 800px) {
+	.wrapperResponsive > .wrapper1
+		    {
 			display: flex;
 			flex-direction: column;
-			flex-wrap: wrap;
+
 			height: 150vw;
 			}
-	body > #wrapper2
-		    {		
+	.wrapperResponsive > .wrapper2
+		    {
 			display: flex;
 			flex-direction: column;
-			flex-wrap: wrap;
-			height: 150vw;			
+
+			height: 150vw;
 			}
-	body > #wrapper3
-		    {		
+	.wrapperResponsive > .wrapper3
+		    {
 			display: flex;
 			flex-direction: column;
-			flex-wrap: wrap;
-			height: 300vw;			
-			}		
-	body > #wrapper4
-		    {		
-			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-			height: 300vw;			
-			}		
-	body > #wrapper5
-		    {		
-			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-			height: 270vw;			
+			height: 300vw;
 			}
-			#image-container15 {
+	.wrapperResponsive > .wrapper4
+		    {
+			display: flex;
+			flex-direction: column;
+
+			height: 300vw;
+			}
+	.wrapperResponsive > .wrapper5
+		    {
+			display: flex;
+			flex-direction: column;
+
+			height: 270vw;
+			}
+			.image-container15 {
     flex: 1;
 }
-	
+
 }
 
 
@@ -162,53 +156,51 @@ img:hover {
 @keyframes leaves {
     0% {
         transform: scale(1.0);
-    }
+      }
 
     100% {
         transform: scale(1.2);
     }
 }
-img {
+.imagen {
     max-height: 100%;
     min-height: 100%;
     min-width: 100%;
     max-width: 100%;
-    display: block;
 }
 
 
 
 
 
-#wrapper1,
-#wrapper2,
-#wrapper3,
-#wrapper4,
-#wrapper5 {
-	
+.wrapper1,
+.wrapper2,
+.wrapper3,
+.wrapper4,
+.wrapper5 {
     display: flex;
     flex-direction: row;
-	flex-wrap: wrap;
+	  flex-wrap: wrap;
 }
 
 
 .text {
     background-color: white;
     color: black;
-    font-size: 5vw;
+    font-size: 4vw;
     /* Responsive font size */
     font-weight: bold;
     margin: 0 auto;
     /* Center the text container */
     padding: 10px;
-    width: 50%;
+    width: 40%;
     text-align: center;
     /* Center text */
-    position: absolute;
+    position: relative;
     /* Position text */
-    top: 80%;
+    top: -25%;
     /* Position text in the middle */
-    left: 70%;
+    left: 45%;
     /* Position text in the middle */
     transform: translate(-50%, -50%);
     /* Position text in the middle */
